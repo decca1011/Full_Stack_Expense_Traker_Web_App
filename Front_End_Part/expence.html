@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.CSS" />
+        
+        <title>Document</title>
+     </head>
+<body>
+    <header>
+        <div class="container">
+          
+                <h3 id="header-title">BILL GENERATOR</h3>
+            </div>
+      </header>
+    <form>
+        <label for="expenenceAmount">Choose Expenence Amount:</label>
+    <input type="number" id='expenenceAmount'placeholder="expenenceAmount"><br><br>
+
+    <label for="descript">Choose description:</label>
+    <input type="text" id='descript' placeholder="descript"><br><br>
+
+     
+    <label for="Category">Choose Category:</label>
+    <select id="Category" name="Category" required>
+      <option value="">Select ...</option>
+      <option value="movie">Movie</option>
+      <option value="transport">transport</option>
+      <option value="meal">meal</option>
+      <option value="rent">rent</option>
+    </select>
+
+    <input type="button" onclick='test()' placeholder="submit"  name="click" value="submit">
+</form>
+    <h2>BILL : </h2>
+   
+ 
+
+ <ol id="myList">
+ </ol>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
